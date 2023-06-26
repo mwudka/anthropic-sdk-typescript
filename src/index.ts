@@ -93,6 +93,7 @@ export class Client {
       });
 
       fetchEventSource(`${this.apiUrl}/v1/complete`, {
+        fetch: fetch,
         method: "POST",
         headers: {
           Accept: "application/json",
